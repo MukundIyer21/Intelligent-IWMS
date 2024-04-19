@@ -76,7 +76,7 @@ class HomeFragment : Fragment() {
         val warehouseData = getDataFromSharedPreferences()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://your-api-base-url.com/")
+            .baseUrl("http://127.0.0.1:5000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -144,6 +144,6 @@ class HomeFragment : Fragment() {
     }
 }
     interface ApiService {
-        @POST("/path/to/your/endpoint")
+        @POST("/optimize_space")
         suspend fun sendData(@Body requestBody: WarehouseData): Response<ResponseBody>
     }
