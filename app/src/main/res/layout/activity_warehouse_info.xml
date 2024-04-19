@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_blue"
+    android:id="@+id/WareHouseInfo"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_height="1000dp"
+        android:id="@+id/cardViewRegister"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtWarehouseLen"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Warehouse Length"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtWarehouseLength"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:hint="In Meters" />
+            <TextView
+                android:id="@+id/txtWarehouseWidth"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Warehouse Width"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtWarehouseWidth"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="70dp"
+                android:hint="in meters" />
+            <TextView
+                android:id="@+id/txtWarehouseHeight"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Warehouse Height"
+                android:layout_marginTop="125dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtWarehouseHeight"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="120dp"
+                android:hint="in meters" />
+            <TextView
+                android:id="@+id/txtWarehouseEntrance"
+                android:layout_width="182dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Entrance Cordinates"
+                android:layout_marginTop="185dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/EntranceXYZ"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="180dp"
+                android:hint="[X,Y,Z] format" />
+            <TextView
+                android:id="@+id/txtWarehouseBlockedArea"
+                android:layout_width="160dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Blocked Area"
+                android:layout_marginTop="245dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/BLockedAreaXYZ"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="240dp"
+                android:hint="[X,Y,Z] format" />
+
+            <TextView
+                android:id="@+id/txtBlockedAreaLength"
+                android:layout_width="180dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Blocked area Length"
+                android:layout_marginTop="325dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtBlockedAreaLength"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="320dp"
+                android:hint="in meters" />
+            <TextView
+                android:id="@+id/txtBlockedAreaWidth"
+                android:layout_width="180dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Blocked Area Width"
+                android:layout_marginTop="385dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtBlockedAreaWidth"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="380dp"
+                android:hint="in meters" />
+            <TextView
+                android:id="@+id/txtBlockedAreaHeight"
+                android:layout_width="180dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Blocke Area Height"
+                android:layout_marginTop="445dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtBlockedAreaHeight"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="440dp"
+                android:hint="in meters" />
+            <TextView
+                android:id="@+id/PathStart"
+                android:layout_width="182dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Path Start"
+                android:layout_marginTop="505dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtPathStartXY"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="500dp"
+                android:hint="[X,Y] format" />
+            <TextView
+                android:id="@+id/PathEnd"
+                android:layout_width="182dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Path End"
+                android:layout_marginTop="565dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="18sp"
+                android:textColor="@color/background_blue"
+                />
+
+            <EditText
+                android:id="@+id/edtTxtPathEndXY"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="560dp"
+                android:hint="[X,Y] format" />
+
+            <Button
+                android:id="@+id/btnRegisterFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="630dp"
+                android:backgroundTint="#00ADC1"
+                android:minHeight="48dp"
+                android:text="Register"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Intelligent IWMS</string>
+    <string name="Enter_name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="cPassword">Confirm Password</string>
+    <string name="title_activity_acutal_page">AcutalPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">\t\t\t\t\t\t\t\t\t\t\t\t\t  Home</string>
+    <string name="menu_gallery">\t\t\t\t\t\t\t\t\t\t\t\t\t  Gallery</string>
+    <string name="menu_slideshow">\t\t\t\t\t\t\t\t\t\t\t\t\t  Slideshow</string>
+    <string name="sign_out">Sign out</string>
+    <string name="menu_account_info">\t\t\t\t\t\t\t\t\t\t\tAccount info</string>
+    <string name="menu_cart">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Cart</string>
+</resources>

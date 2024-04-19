@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_blue"
+    android:id="@+id/RegisterPage"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_height="500dp"
+        android:id="@+id/cardViewRegister"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/EnterName"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Warehouse Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="#9C9C9C"
+                android:backgroundTint="@color/white"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edtTxtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_underline"
+                    android:ems="10"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:minHeight="20dp"
+                    android:textColor="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EnterEmail"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="#9C9C9C"
+                android:backgroundTint="@color/white"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edtTxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_underline"
+                    android:ems="10"
+                    android:hint="Owner Email"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EnterPassword"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="#9C9C9C"
+                android:backgroundTint="@color/white"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edtTxtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_underline"
+                    android:ems="10"
+                    android:hint="@string/Password"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EnterConfirmPassword"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="#9C9C9C"
+                android:backgroundTint="@color/white"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edtTxtCPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_underline"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:hint="@string/cPassword"
+                    android:inputType="textPassword"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="380dp"
+                android:paddingHorizontal="70dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingVertical="15dp"
+                android:backgroundTint="#00ADC1"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/RegisterImage"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="180dp"
+        android:src="@mipmap/img"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getStartedText"
+        android:text=" Here's \n your first \n step with \n us!"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>
