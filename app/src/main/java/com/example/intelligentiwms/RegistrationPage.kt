@@ -10,10 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputLayout
-import com.google.firebase.FirebaseApp
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+
 
 class RegistrationPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +37,7 @@ class RegistrationPage : AppCompatActivity() {
             val intent = Intent(this,WarehouseInfo::class.java);
             intent.putExtra("name",edtTxtWarehouseNameInput.text.toString());
             intent.putExtra("email",edtTxtEmailInput.text.toString());
-            intent.putExtra("password",edtTxtPasswordInput.text).toString();
+            intent.putExtra("password",edtTxtPasswordInput.text.toString());
             startActivity(intent);
         }
 

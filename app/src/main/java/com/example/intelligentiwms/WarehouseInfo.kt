@@ -2,6 +2,8 @@ package com.example.intelligentiwms
 
 import android.icu.text.UnicodeSet.EntryRange
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -9,8 +11,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.firebase.Firebase
-import com.google.firebase.database.database
+
 
 class WarehouseInfo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,8 @@ class WarehouseInfo : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
 
         val btnRegister: Button = findViewById(R.id.btnRegisterFinal)
         val warehouseLength:EditText = findViewById(R.id.edtTxtWarehouseLength)
@@ -64,8 +67,11 @@ class WarehouseInfo : AppCompatActivity() {
             val userEmail:String? = intent.getStringExtra("email");
             val userPassword:String? = intent.getStringExtra("password")
 
-            val database = Firebase.database
-            val myRef = database.getReference("warehouse")
+            Log.d("reached","reached")
+
+
+
+            Log.d("reached","reachedFirebase")
 
             val data = WarehouseData(wareHouseName,
                 userEmail,
@@ -88,14 +94,33 @@ class WarehouseInfo : AppCompatActivity() {
                 pathEnd_y
             );
 
-            myRef.setValue(data)
-                .addOnSuccessListener {
-                    Toast.makeText(this,"done gg",Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(this,"kys",Toast.LENGTH_SHORT).show()
-                }
 
+            val sharedPreferences = getSharedPreferences("warehouseData", MODE_PRIVATE)
+            val myEdit = sharedPreferences.edit()
+
+
+            myEdit.putString("email", userEmail)
+            myEdit.putString("password",userPassword)
+            myEdit.putInt("warehouseLen",wareHouseLen)
+            myEdit.putInt("warehouseWid",wareHouseWid)
+            myEdit.putInt("warehouseHei",wareHouseHei)
+            myEdit.putInt("entranceX",entrance_x)
+            myEdit.putInt("entranceY",entrance_y)
+            myEdit.putInt("entra    nceZ",entrance_z)
+            myEdit.putInt("blockedX",blocked_x)
+            myEdit.putInt("blockedY",blocked_y)
+            myEdit.putInt("blockedZ",blocked_z)
+            myEdit.putInt("blockedLen",blockedLen)
+            myEdit.putInt("blockedWid",blockedWid)
+            myEdit.putInt("blockedHei",blockedHei)
+            myEdit.putInt("pathStartX",pathStart_x)
+            myEdit.putInt("pathStartY",pathStart_y)
+            myEdit.putInt("pathEndX",pathEnd_x)
+            myEdit.putInt("pathEndY",pathEnd_y)
+            myEdit.apply()
+            Toast.makeText(applicationContext,"Registered",Toast.LENGTH_SHORT).show()
         }
+
 
 
     }

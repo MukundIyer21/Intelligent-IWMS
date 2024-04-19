@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "500249442735",
-    "project_id": "intelligent-iwms",
-    "storage_bucket": "intelligent-iwms.appspot.com"
+    "project_number": "796270868013",
+    "project_id": "iwms-bbf78",
+    "storage_bucket": "iwms-bbf78.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:500249442735:android:6a9c53fa5d207dc7cc175a",
+        "mobilesdk_app_id": "1:796270868013:android:5afd66471a1c8e75176aa4",
         "android_client_info": {
           "package_name": "com.example.intelligentiwms"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDtsXfn-jS35jhAKWCfXtSlWMUT6TCa8qg"
+          "current_key": "AIzaSyCgpMJxBaSqa6bXcWhVhYCeNqaNTlJ3ANA"
         }
       ],
       "services": {

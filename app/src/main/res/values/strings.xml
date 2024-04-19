@@ -12,9 +12,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">\t\t\t\t\t\t\t\t\t\t\t\t\t  Home</string>
-    <string name="menu_gallery">\t\t\t\t\t\t\t\t\t\t\t\t\t  Gallery</string>
-    <string name="menu_slideshow">\t\t\t\t\t\t\t\t\t\t\t\t\t  Slideshow</string>
+    <string name="menu_home">\t\t\t\t\t\t\t  Dashboard</string>
+    <string name="menu_gallery">\t\t\t\t\t\t\t  Demand Forecasting</string>
+    <string name="menu_slideshow">\t\t\t\t\t\t\t  Warehouse Layout</string>
     <string name="sign_out">Sign out</string>
     <string name="menu_account_info">\t\t\t\t\t\t\t\t\t\t\tAccount info</string>
     <string name="menu_cart">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Cart</string>
