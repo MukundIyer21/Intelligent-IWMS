@@ -34,7 +34,7 @@ class LoginPage : AppCompatActivity() {
 
         txtNewWarehouse.setOnClickListener {
             val intent = Intent(this,RegistrationPage::class.java)
-            startActivity(intent)
+            startActivity(intent);
         }
 
     }
